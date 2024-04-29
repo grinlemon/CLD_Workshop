@@ -10,8 +10,9 @@
 
 ## Scenario
 
-Describe step-by-step the scenario to be disassembled. Write it using this format (not taken from BDD).
+Describe step-by-step the scenario. Write it using this format (not taken from BDD).
 
+### STEP 01
 ```
 //given -> starting context
 
@@ -22,4 +23,12 @@ Describe step-by-step the scenario to be disassembled. Write it using this forma
 
 ## Cost
 
+<analysis of load-related costs.>
+
+<option to reduce or adapt costs (practices, subscription)>
+
 ## Return of experience
+
+<take a position on the poc that has been produced.>
+
+<Did it validate the announced objectives?>
