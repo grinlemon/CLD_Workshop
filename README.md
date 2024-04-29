@@ -10,7 +10,7 @@
 
 ## Scenario
 
-Describe step-by-step the scenario. Write it using this format (not taken from BDD).
+Describe step-by-step the scenario. Write it using this format (BDD style).
 
 ### STEP 01
 ```
@@ -18,7 +18,7 @@ Describe step-by-step the scenario. Write it using this format (not taken from B
 
 //when -> event to produce
 
-//then - > result expected
+//then - > expected result
 ```
 
 ## Cost
