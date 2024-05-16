@@ -86,10 +86,8 @@ Then we ensure optimal operation of our applications on the Infomaniak Public Cl
 ```
 
 ## Cost
-
-<analysis of load-related costs.>
-
-<option to reduce or adapt costs (practices, subscription)>
+### Estimation
+Based on a estimation we made with Infomaniak Price Calculator we will turn around 12.68.-/month.
 
 ## Return of experience
 
