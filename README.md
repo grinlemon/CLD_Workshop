@@ -87,7 +87,7 @@ Then we ensure optimal operation of our applications on the Infomaniak Public Cl
 
 ## Cost
 ### Estimation
-Based on a estimation we made with Infomaniak Price Calculator we will turn around 12.68.-/month.
+Based on a estimation we made with Infomaniak Price Calculator ([here](https://infomaniak.cloud/calculator?uuid=098009b5-bad3-45d6-a9c6-bfce2b6e844f)) we will turn around 12.68.-/month. 
 
 ## Return of experience
 
