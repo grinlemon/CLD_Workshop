@@ -1,8 +1,7 @@
-# Prepare your environment
-To prepare our environment we follow this [documentation](https://docs.infomaniak.cloud/documentation/00.getting-started/02.Connect_project/#__tabbed_1_1) written by Infomaniak.
+# Prepare the environment
+To prepare the environment we followed this [documentation](https://docs.infomaniak.cloud/documentation/00.getting-started/02.Connect_project/#__tabbed_1_1) written by Infomaniak.
 
 To validate the **STEP 01** we first need to be able to access the cluster through CLI commands.
-
 
 # Create cluster
 ## Connect to OpenStack
@@ -14,9 +13,8 @@ Execute the following command to activate the connection.
 source PCP-PROJET_ID-openrc.sh
 ```
 
-## Export KOPS STATE
+## Create kops bucket
 ```shell
-openstack container list
 openstack container create kops
 ```
 
@@ -49,9 +47,15 @@ kops create cluster \
 kops edit cluster cld-workshop.k8s.local --state swift://kops
 ```
 
-Then add the following 
+Then add the following value `nodePortAccess` right after `networkCIDR` with the same value. In this case it's `10.0.0.0/24`
 
-## Apply config file
+```yaml
+  networkCIDR: 10.0.0.0/24
+  nodePortAccess:
+  - 10.0.0.0/24
+```
+
+## Apply config file
 ```bash
 kops update cluster --name cld-workshop.k8s.local --yes --admin --state swift://kops
 ```
