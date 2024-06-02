@@ -5,7 +5,10 @@ To validate the **STEP 01** we first need to be able to access the cluster throu
 
 # Create cluster
 ## Connect to OpenStack
-Duplicate and edit the [PCP-Example-openrc.sh](PCP-Example-openrc.sh) file to put your user details.
+Duplicate and edit the [PCP-Example-openrc.sh](PCP-Example-openrc.sh) file to put your user details : 
+- 16 `export OS_PROJECT_ID="Project ID"`
+- 17 `export OS_PROJECT_NAME="Project Name"`
+- 27 `export OS_USERNAME="Username"`
 
 Execute the following command to activate the connection.
 
@@ -59,3 +62,25 @@ Then add the following value `nodePortAccess` right after `networkCIDR` with the
 ```bash
 kops update cluster --name cld-workshop.k8s.local --yes --admin --state swift://kops
 ```
+
+## Export contect for kubectl
+```shell
+kops export kubeconfig --admin --name cld-workshop.k8s.local --state swift://kops
+```
+
+Then you can test to be sure that you have access to the cluster with kubectl.
+
+```shell
+kubectl config get-contexts
+```
+
+You should have the following response
+
+```shell
+CURRENT   NAME                     CLUSTER                  AUTHINFO                 NAMESPACE
+*         cld-workshop.k8s.local   cld-workshop.k8s.local   cld-workshop.k8s.local   
+```
+
+Once there you will be able to access `kubectl` commands for the newly created cluster!
+
+You have now finish the **STEP 01**, congratulations!
