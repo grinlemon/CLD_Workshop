@@ -83,3 +83,26 @@ CURRENT   NAME                     CLUSTER                  AUTHINFO            
 Once there you will be able to access `kubectl` commands for the newly created cluster!
 
 You have now finish the **STEP 01**, congratulations!
+
+## Create the pods and services
+
+```shell
+kubectl create -f frontend-svc.yaml
+kubectl create -f frontend-pod.yaml
+
+kubectl create -f redis-svc.yaml
+kubectl create -f redis-pod.yaml
+
+kubectl create -f api-svc.yaml
+kubectl create -f api-pod.yaml
+```
+
+Have a look at the nodes, pods and services
+
+```shell
+kubectl get nodes
+
+kubectl get services
+
+kubectl get pods
+```
