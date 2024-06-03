@@ -16,7 +16,7 @@ On the Kubernetes documentation, we can find a cluster architecture diagram whic
 
 ![](img/image.png)
 
-In our case we want to deploy the content of the CLD lab 5 (Kubernetes on Google Cloud) but on a swiss cloud which is way better concerning data protection and security. As we want a complete control of the cloud plateform we need to use a IaaS and not a CaaS.
+In our case we want to deploy the content of the CLD lab 5 (Kubernetes on Google Cloud) but on a swiss cloud which is way better concerning data protection and security. As we want a complete control of the cloud plateform to install Kubernetes we will use a **IaaS** and not a CaaS.
 
 Through our analysis we found that Infomaniak offer a Jelastic Cloud which is considered as a PaaS (Plateform as a Service). They also offer the possibility to install our own servers directly in their datacenter. It could be a good option if you already have hardware but don't have the capacity to store them in your office.
 
@@ -28,77 +28,48 @@ Describe step-by-step the scenario. Write it using this format (BDD style).
 
 ### STEP 01
 ```
-Given a newly provisioned Infomaniak Public Cloud instance with available resources.
+given -> we don't have any cloud platform to host our containers
 
-When we deploy Kubernetes on our public cloud instance using the Infomaniak dashboard or API.
+when -> we want to create a project using Infomaniak IaaS services (Public Cloud)
 
-Then Kubernetes is successfully deployed and running on our Infomaniak Public Cloud, providing us with a scalable and manageable container orchestration platform.
-
+then -> create a project on the cloud platform
 ```
 
 ### STEP 02
 ```
-Given access to our Infomaniak Public Cloud account and available resources.
+given -> we have access to a project on Infomaniak 
 
-When we navigate to the Infomaniak dashboard and select the option to provision a new cloud instance.
+when -> we create OpenStack accounts and share them with our team
 
-Then we specify our desired configuration, such as CPU, RAM, and storage capacity, and proceed to deploy the instance.
+then -> our OpenStack platform is accessible to our team
 ```
 
 ### STEP 03
 ```
-Given that our Infomaniak Public Cloud instance is successfully provisioned.
+given -> we have access to our OpenStack with Horizon or CLI
 
-When we log in to the instance via SSH or other remote access methods.
+when -> we document ourselves to prepare the commands to create the cluster
 
-Then we verify that the instance is operational and accessible.
+then -> we have created the cluster on our OpenStack platform
 ```
 
 ### STEP 04
 ```
-Given an operational Infomaniak Public Cloud instance.
+given -> we have a running Kubernetes cluster
 
-When we ensure that the necessary dependencies, such as Docker and kubectl, are installed on the instance.
+when -> we want to ensure that the cluster can do auto-scaling on pods
 
-Then we are ready to proceed with deploying Kubernetes.
+then -> the cluster can start pods automatically
 ```
 
 ### STEP 05
 ```
-Given that Kubernetes deployment is initiated.
+given -> we have a running Kubernetes cluster capable of auto-scaling pods
 
-When we monitor the deployment process for any errors or issues.
+when -> we want to perform a load test on the cluster to ensure it can handle many connections at the same time
 
-Then we troubleshoot and resolve any encountered problems to ensure a successful deployment.
+then -> the tests validate that the cluster handles multiple connections correctly at the same time
 ```
-
-### STEP 06
-```
-Given that Kubernetes is deployed.
-
-When we prepare the cluster to support scalability and handle increasing connections.
-
-Then we ensure that all nodes are in a ready state and that the control plane components are functioning properly.
-```
-
-### STEP 07
-```
-Given a successfully deployed Kubernetes cluster.
-
-When we verify the status of the cluster using kubectl commands.
-
-Then we ensure that all nodes are in a ready state and that the control plane components are functioning properly.
-```
-
-### STEP 08
-```
-Given deployed applications within our Kubernetes cluster.
-
-When we monitor the cluster's performance and resource utilization.
-
-Then we ensure optimal operation of our applications on the Infomaniak Public Cloud Kubernetes cluster.
-```
-
 ## Cost
 ### Estimation
 Based on a estimation we made with Infomaniak Price Calculator ([here](https://infomaniak.cloud/calculator?uuid=098009b5-bad3-45d6-a9c6-bfce2b6e844f)) we will turn around 12.68.-/month. 
