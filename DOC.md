@@ -106,3 +106,8 @@ kubectl get services
 
 kubectl get pods
 ```
+or  
+
+```shell
+kubectl all
+```
