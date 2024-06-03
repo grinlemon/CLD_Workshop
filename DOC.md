@@ -42,7 +42,8 @@ kops create cluster \
   --os-ext-net ext-floating1 \
   --os-octavia=true \
   --os-octavia-provider octavia \
-  --os-kubelet-ignore-az=true
+  --os-kubelet-ignore-az=true \
+  --os-dns-servers=83.166.143.51,83.166.143.52
 ```
 
 ## Edit cluster config file
@@ -54,8 +55,6 @@ Then add the following value `nodePortAccess` right after `networkCIDR` with the
 
 ```yaml
   networkCIDR: 10.0.0.0/24
-  nodePortAccess:
-  - 10.0.0.0/24
 ```
 
 ## Apply config file
