@@ -22,5 +22,10 @@ Load test
 ```shell
 echo "GET http://195.15.197.137" | vegeta attack -duration=1m -rate=200 | vegeta report --type=text
 ```
+get all :
+
+```shell
+kubectl get all
+```
 
 ## Conclusion
