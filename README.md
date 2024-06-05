@@ -20,7 +20,7 @@ In our case, we want to deploy the content of CLD lab 5 (Kubernetes on Google Cl
 
 Through our analysis, we found that Infomaniak offers a Jelastic Cloud, considered a PaaS (Platform as a Service). They also provide the option to install our own servers directly in their data center. This could be a good option if you already have hardware but lack the capacity to store it in your office.
 
-![](img/image%20copy.png)
+![](img/diagram_infrastructure.png)
 
 ## Scenario
 
