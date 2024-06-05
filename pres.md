@@ -2,6 +2,9 @@
 
 ## Introduction
 
+- Swiss cloud
+- 
+
 ## Demo
 
 get all (services, pod, nodes)
@@ -10,8 +13,10 @@ kubectl get all
 ```
 Delete pod frontend
 ```shell
-kubectl delete pod frontend
+kubectl delete pod id_pod
 ```
+We can see a new pod is immediately created
+
 
 Load test
 ```shell
