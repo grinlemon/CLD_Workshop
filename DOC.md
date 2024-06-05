@@ -118,9 +118,9 @@ Secondly, you have to update the yaml you used before for the pods and make a de
 ```shell
 kubectl create -f redis-deployment.yaml
 
-kubectl create -f frontend-deployment.yaml (4 )
+kubectl create -f frontend-deployment.yaml (4 replicas)
 
-kubectl create -f api-deployment.yaml
+kubectl create -f api-deployment.yaml (4 replicas)
 ```
 
 Now if you run `kubectl get all` you should have this output :
@@ -150,8 +150,7 @@ echo "GET http://195.15.197.137" | vegeta attack -duration=1m -rate=200 | vegeta
 ```
 and you should have this output who shows that your autoscalling is working :
 
-![img]()
-
+![img](https://github.com/grinlemon/CLD_Workshop/blob/main/img/vegeta.png)
 
 ## Usefull commandes
 
