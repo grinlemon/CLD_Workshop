@@ -14,13 +14,13 @@ Validate the possible use of Infomaniak's Public Cloud for a startup that needs 
 
 The Kubernetes documentation provides a cluster architecture diagram that illustrates how it works.
 
-![](img/image.png)
+![](img/diagram_infrastructure.png)
 
 In our case, we want to deploy the content of CLD lab 5 (Kubernetes on Google Cloud) on a Swiss cloud, which offers better data protection and security. Since we want complete control of the cloud platform to install Kubernetes, we will use IaaS (Infrastructure as a Service) instead of CaaS (Container as a Service).
 
 Through our analysis, we found that Infomaniak offers a Jelastic Cloud, considered a PaaS (Platform as a Service). They also provide the option to install our own servers directly in their data center. This could be a good option if you already have hardware but lack the capacity to store it in your office.
 
-![](img/diagram_infrastructure.png)
+![](img/image copy.png)
 
 ## Scenario
 
