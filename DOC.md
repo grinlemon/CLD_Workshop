@@ -55,6 +55,8 @@ Then add the following value `nodePortAccess` right after `networkCIDR` with the
 
 ```yaml
   networkCIDR: 10.0.0.0/24
+  nodePortAccess:
+  - 10.0.0.0/24
 ```
 
 ## Apply config file
