@@ -98,12 +98,12 @@ kubectl create -f redis-pod.yaml
 kubectl create -f api-svc.yaml
 kubectl create -f api-pod.yaml
 ```
-after these commands we checked that the app is correctly running.
-Currently there is no support for resilience. So let's do it.
+after these commands you can check that the app is correctly running.
+Currently there is no support for resilience. So let's add it.
 
 ## Add the support for resilience
 
-First we have to delete all pods we have created before.
+First you have to delete all pods you have created before.
 
 ```shell
 kubectl delete pod api
@@ -113,15 +113,36 @@ kubectl delete pod redis
 kubectl delete pod frontend
 ```
 
-Secondly, we have to update the yaml we used before for the pods and make a deployement version of them, then create them.
+Secondly, you have to update the yaml you used before for the pods and make a deployement version of them, then create them.
 
 ```shell
-kubectl create -f frontend-deployment.yaml
-
 kubectl create -f redis-deployment.yaml
+
+kubectl create -f frontend-deployment.yaml (4 )
 
 kubectl create -f api-deployment.yaml
 ```
+
+Now if you run `kubectl get all` you should have this output :
+
+![img]()
+
+## Put autoscaling in place
+
+To put autoscalling in place you will have to run these two commandes that will creat an hpa autoscalling :
+
+```shell
+kubectl autoscale deployment api-deployment --cpu-percent=30 --min=1 --max=4
+
+kubectl autoscale deployment frontend-deployment --cpu-percent=30 --min=1 --max=4
+```
+
+Now if you run `kubectl get all` you should have this output with the hpa autoscalling :
+
+![img]()
+
+## Usefull commandes
+
 Have a look at the nodes, pods and services
 
 ```shell
