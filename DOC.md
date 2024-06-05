@@ -132,8 +132,9 @@ Now if you run `kubectl get all` you should have this output :
 
 ## Put autoscaling in place
 
-To put autoscalling in place you will have to run these two commandes that will create an hpa autoscalling :
-(HPA: Adjusts the number of pod replicas based on metrics like CPU or memory usage)
+To put autoscalling in place you will have to run this command that will create an hpa autoscalling :
+
+HPA: Adjusts the number of pod replicas based on metrics like CPU or memory usage, we have also specified that during a scale up or a scale down as soon as the stabilisation waiting period is reached, the HPA reviews the conditions every few seconds to apply the pod augmentation or reduction policy.
 
 ```shell
 kubectl apply -f frontend-autoscale.yaml
