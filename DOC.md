@@ -153,7 +153,14 @@ echo "GET http://195.15.197.137" | vegeta attack -duration=1m -rate=200 | vegeta
 ```
 and you should have this output who shows that your autoscalling is working :
 
-![img](https://github.com/grinlemon/CLD_Workshop/blob/main/img/vegeta.png)
+![img](https://github.com/grinlemon/CLD_Workshop/blob/main/img/vegeta_v2.png)
+
+We can see that we have 4 frontend pods :
+![img](https://github.com/grinlemon/CLD_Workshop/blob/main/img/scale_up.png)
+
+After 3 minutes without load, we have only 2 pods.
+![img](https://github.com/grinlemon/CLD_Workshop/blob/main/img/scale_down.png)
+
 
 ## Usefull commandes
 
