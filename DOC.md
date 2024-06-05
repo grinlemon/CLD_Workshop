@@ -86,7 +86,7 @@ Once there you will be able to access `kubectl` commands for the newly created c
 
 You have now finish the **STEP 01**, congratulations!
 
-## Create the pods and services
+## Create the pods and services (no resilience) 
 
 ```shell
 kubectl create -f frontend-svc.yaml
@@ -98,7 +98,30 @@ kubectl create -f redis-pod.yaml
 kubectl create -f api-svc.yaml
 kubectl create -f api-pod.yaml
 ```
+after these commands we checked that the app is correctly running.
+Currently there is no support for resilience. So let's do it.
 
+## Add the support for resilience
+
+First we have to delete all pods we have created before.
+
+```shell
+kubectl delete pod api
+
+kubectl delete pod redis
+
+kubectl delete pod frontend
+```
+
+Secondly, we have to update the yaml we used before for the pods and make a deployement version of them, then create them.
+
+```shell
+kubectl create -f frontend-deployment.yaml
+
+kubectl create -f redis-deployment.yaml
+
+kubectl create -f api-deployment.yaml
+```
 Have a look at the nodes, pods and services
 
 ```shell
@@ -111,5 +134,6 @@ kubectl get pods
 or  
 
 ```shell
-kubectl all
+kubectl get all
 ```
+
