@@ -136,9 +136,7 @@ To put autoscalling in place you will have to run these two commandes that will 
 (HPA: Adjusts the number of pod replicas based on metrics like CPU or memory usage)
 
 ```shell
-kubectl autoscale deployment api-deployment --cpu-percent=30 --min=1 --max=4
-
-kubectl autoscale deployment frontend-deployment --cpu-percent=30 --min=1 --max=4
+kubectl apply -f frontend-autoscale.yaml
 ```
 
 Now if you run `kubectl get all` you should have this output with the hpa autoscalling :
