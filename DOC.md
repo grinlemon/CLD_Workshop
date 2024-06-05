@@ -117,10 +117,13 @@ Secondly, you have to update the yaml you used before for the pods and make a de
 
 ```shell
 kubectl create -f redis-deployment.yaml
+(1 replica, using only one Redis server instance ensures simplicity, consistency, and easier management. It avoids the complexity of synchronization.)
 
-kubectl create -f frontend-deployment.yaml (4 replicas)
+kubectl create -f frontend-deployment.yaml
+(4 replicas)
 
-kubectl create -f api-deployment.yaml (4 replicas)
+kubectl create -f api-deployment.yaml
+(4 replicas)
 ```
 
 Now if you run `kubectl get all` you should have this output :
@@ -130,6 +133,7 @@ Now if you run `kubectl get all` you should have this output :
 ## Put autoscaling in place
 
 To put autoscalling in place you will have to run these two commandes that will creat an hpa autoscalling :
+(HPA: Adjusts the number of pod replicas based on metrics like CPU or memory usage)
 
 ```shell
 kubectl autoscale deployment api-deployment --cpu-percent=30 --min=1 --max=4
