@@ -125,7 +125,7 @@ kubectl create -f api-deployment.yaml
 
 Now if you run `kubectl get all` you should have this output :
 
-![img]()
+![img](https://github.com/grinlemon/CLD_Workshop/blob/main/img/getAll1.png)
 
 ## Put autoscaling in place
 
@@ -139,7 +139,19 @@ kubectl autoscale deployment frontend-deployment --cpu-percent=30 --min=1 --max=
 
 Now if you run `kubectl get all` you should have this output with the hpa autoscalling :
 
+![img](https://github.com/grinlemon/CLD_Workshop/blob/main/img/getAll2.png)
+
+## Load-Testing using vegeta
+
+run this commande to load test the app using vegeta
+
+```shell
+echo "GET http://195.15.197.137" | vegeta attack -duration=1m -rate=200 | vegeta report --type=text
+```
+and you should have this output who shows that your autoscalling is working :
+
 ![img]()
+
 
 ## Usefull commandes
 
