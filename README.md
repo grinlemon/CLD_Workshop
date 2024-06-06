@@ -75,3 +75,10 @@ This workshop has been a great tool to enhance our knowledge about Kubernetes. W
 
 ### Did it validate the announced objectives?
 In our opinion, completely. We have been able to host a two-tier application, which could be typical for a startup.
+
+## Usefull links
+- [Infomaniak](https://www.infomaniak.com/fr)
+- [OpenStack](https://www.openstack.org/)
+- [Kops](https://kops.sigs.k8s.io/)
+- [Kubernetes](https://kubernetes.io/)
+- [Grafana](https://grafana.com/)
