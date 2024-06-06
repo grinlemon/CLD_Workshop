@@ -37,7 +37,7 @@ kubectl get all
 Get the events of the autoscaler
 
 ```shell
-horizontalpodautoscaler.autoscaling/frontend-autoscale 
+kubectl describe horizontalpodautoscaler.autoscaling/frontend-autoscale 
 ```
 
 The final result :
