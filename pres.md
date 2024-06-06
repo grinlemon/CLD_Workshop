@@ -5,6 +5,7 @@
 - Swiss cloud
 - Kubernetes
 - Openstack
+- Cost
 
 ## Demo
 
