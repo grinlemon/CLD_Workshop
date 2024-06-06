@@ -53,6 +53,14 @@ Grafana :
 
 http://195.15.196.13:3000/
 
+## Avantages du Cloud Computing dans notre cas
+
+- Économies de mise à l’échelle
+- Pay-As-You-Go
+- Auto Scaling
+- Travailler n’importe où, n’importe quand
+- Vitesse de déploiement
+
 ## Conclusion
 
 Speak about the issues encountered.
@@ -60,5 +68,11 @@ Speak about the issues encountered.
 Interesting and realistic project.
 
 ## Références et liens 
+- [Infomaniak](https://www.infomaniak.com/fr)
+- [OpenStack](https://www.openstack.org/)
+- [Kops](https://kops.sigs.k8s.io/)
+- [Kubernetes](https://kubernetes.io/)
+- [Grafana](https://grafana.com/)
+
 
 
