@@ -168,6 +168,15 @@ We can see that we have 4 frontend pods :
 After 3 minutes without load, we have only 2 pods.
 ![img](https://github.com/grinlemon/CLD_Workshop/blob/main/img/scale_down.png)
 
+## Monitoring
+
+We have deploy a stack with grafana for the monitoring.
+We follow the ![infomaniak documentation](https://docs.infomaniak.cloud/documentation/09.others/005.monitoring/).
+
+This part is not include in the cost estimation.
+
+Here the dashboard. In our project is : http://195.15.196.13:3000/
+![img](https://github.com/grinlemon/CLD_Workshop/blob/main/img/grafana.png)
 
 ## Usefull commandes
 
