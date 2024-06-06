@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Explication théorique du sujet -> reprendre le readme
+Explication théorique du sujet -> reprendre le readme et expliquer notre infra (schema)
 
 - Swiss cloud
 - Openstack
