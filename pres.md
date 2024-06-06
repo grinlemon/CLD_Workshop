@@ -44,6 +44,10 @@ The final result :
 
 http://195.15.197.137/all
 
+Grafana :
+
+http://195.15.196.13:3000/
+
 ## Conclusion
 
 Speak about the issues encountered.
