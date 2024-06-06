@@ -2,12 +2,19 @@
 
 ## Introduction
 
+Explication théorique du sujet -> reprendre le readme
+
 - Swiss cloud
-- Kubernetes
 - Openstack
+- Kubernetes / Kops
 - Cost
 
-## Demo
+## Demo and POC
+
+### Init du Cloud Infomaniak
+
+Expliquer le groupe et comment accer au service cloud depuis Infomaniak et comment y acceder depuis un cli.   
+(kops -> creation du cluster, openstack -> , kubectl -> init des pods et autosacling)
 
 Connection to the infomaniak console to show the infrastructure deployed.
 
@@ -53,3 +60,7 @@ http://195.15.196.13:3000/
 Speak about the issues encountered.
 
 Interesting and realistic project.
+
+## Références et liens 
+
+
