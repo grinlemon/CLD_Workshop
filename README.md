@@ -67,7 +67,7 @@ then -> the tests validate that the cluster handles multiple connections correct
 Based on an estimation we made with the Infomaniak Price Calculator ([here](https://infomaniak.cloud/calculator?uuid=098009b5-bad3-45d6-a9c6-bfce2b6e844f)), the cost will be around 13 CHF per month.
 
 ### Reality
-As we needed to significantly upgrade our infrastructure, we are now spending about 73 CHF per month for 3 control planes, 1 worker, 2 load balancers, storage, and 2 IP addresses. You can find the details based on the price calculator from Infomaniak [here](https://infomaniak.cloud/calculator?uuid=c213684f-019a-4a6c-8403-bbe274cb89ab).
+As we needed to significantly upgrade our infrastructure, we are now spending about 94 CHF per month for 3 control planes, 1 worker, 2 load balancers, 1 grafana instance, storage, and 3 IP addresses. You can find the details based on the price calculator from Infomaniak [here](https://infomaniak.cloud/calculator?uuid=aa442417-f904-4853-84bb-a6060018c9c5).
 
 ## Return of Experience
 
