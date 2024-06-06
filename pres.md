@@ -11,10 +11,8 @@ Explication théorique du sujet -> reprendre le readme
 
 ## Demo and POC
 
-### Init du Cloud Infomaniak
-
 Expliquer le groupe et comment accer au service cloud depuis Infomaniak et comment y acceder depuis un cli.   
-(kops -> creation du cluster, openstack -> , kubectl -> init des pods et autosacling)
+(openstack -> connection au cloud infomaniak avec un cli, kops -> creation/reglage du cluster, kubectl -> init des pods et autosacling)
 
 Connection to the infomaniak console to show the infrastructure deployed.
 
