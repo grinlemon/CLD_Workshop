@@ -140,7 +140,7 @@ kubectl apply -f frontend-autoscale.yaml
 
 Now if you run `kubectl get all` you should have this output with the hpa autoscalling :
 
-![img](https://github.com/grinlemon/CLD_Workshop/blob/main/img/scale_down.png)
+![img](https://github.com/grinlemon/CLD_Workshop/blob/main/img/getAll.png)
 
 We can also see the autoscale settings.
 
