@@ -64,7 +64,7 @@ Then add the following value `nodePortAccess` right after `networkCIDR` with the
 kops update cluster --name cld-workshop.k8s.local --yes --admin --state swift://kops
 ```
 
-## Export contect for kubectl
+## Export context for kubectl
 ```shell
 kops export kubeconfig --admin --name cld-workshop.k8s.local --state swift://kops
 ```
